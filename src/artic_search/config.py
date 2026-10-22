@@ -6,9 +6,7 @@ Configuration and constants for the Art Institute API client.
 API_URL = "https://api.artic.edu/api/v1/artworks/search"
 
 # HTTP Headers
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
-}
+HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"}
 
 # Fields to request from the API
 # We explicitly ask for _score so we can evaluate relevance later

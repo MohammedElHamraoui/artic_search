@@ -8,7 +8,7 @@ from .client import search_artworks
 from .display import display_results
 
 
-def main():
+def main() -> None:
     """
     The entry point of the application. Coordinates user input,
     data fetching, and presentation.

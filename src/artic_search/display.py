@@ -5,7 +5,7 @@ Display and presentation logic for search results.
 from .config import MIN_RELEVANCE_SCORE
 
 
-def display_results(artworks: list, artist: str):
+def display_results(artworks: list, artist: str) -> None:
     """
         Evaluates the relevance of the artworks and prints them to the console.
 
