@@ -1,0 +1,18 @@
+[project]
+name = "artic-search"
+version = "0.1.0"
+description = "A CLI tool to search Art Institute of Chicago artworks by artist"
+readme = "README.md"
+authors = [
+    { name = "Mohammed El Hamraoui", email = "92893757+MohammedElHamraoui@users.noreply.github.com" },
+]
+requires-python = ">=3.13"
+dependencies = ["requests>=2.31.0"]
+
+[project.scripts]
+# Fixed: Points to main.py, not __init__.py
+artic-search = "artic_search.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
