@@ -20,7 +20,7 @@ def search_artworks(artist: str, limit: int = DEFAULT_LIMIT) -> list:
     Returns:
         A list of artwork dictionaries, or an empty list on failure.
     """
-    params = {"q": artist, "limit": limit, "fields": FIELDS}
+    params: dict[str, str | int] = {"q": artist, "limit": limit, "fields": FIELDS}
 
     # FIX: Added timeout=10 to prevent the script from hanging indefinitely
     response = requests.get(API_URL, params=params, headers=HEADERS, timeout=10)
